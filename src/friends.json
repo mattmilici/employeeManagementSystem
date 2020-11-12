@@ -1,0 +1,97 @@
+[{
+        "id": 1,
+        "name": "SpongeBob",
+        "phone": "1234432143",
+        "position": "Fry Cook",
+        "location": "A Pineapple Under the Sea"
+    },
+    {
+        "id": 2,
+        "name": "Mr. Krabs",
+        "phone": "1234432143",
+        "position": "Restaurant Owner",
+        "location": "A Giant Anchor"
+    },
+    {
+        "id": 1233,
+        "name": "Squidward",
+        "phone": "1234432143",
+        "position": "Cashier",
+        "location": "An Easter Island Head"
+    },
+    {
+        "id": 4323,
+        "name": "Squidward",
+        "phone": "1234432143",
+        "position": "Cashier",
+        "location": "An Easter Island Head"
+    },
+    {
+        "id": 4533,
+        "name": "Squidward",
+        "phone": "1234432143",
+        "position": "Cashier",
+        "location": "An Easter Island Head"
+    },
+    {
+        "id": 4,
+        "name": "Dexter",
+        "phone": "1234432143",
+        "position": "Boy Genius",
+        "location": "A Secret Laboratory"
+    },
+    {
+        "id": 5,
+        "name": "Courage",
+        "phone": "1234432143",
+        "position": "A Cowardly Dog",
+        "location": "Nowhere, Kansas"
+    },
+    {
+        "id": 6,
+        "name": "Doug Funnie",
+        "phone": "1234432143",
+        "position": "Student",
+        "location": "Bluffington"
+    },
+    {
+        "id": 7,
+        "name": "Bugs Bunny",
+        "phone": "1234432143",
+        "position": "Looney Toon",
+        "location": "A Rabbit Burrow"
+    },
+    {
+        "id": 8,
+        "name": "Johnny Bravo",
+        "phone": "1234432143",
+        "position": "Ladies Man",
+        "location": "Aron City"
+    },
+    {
+        "id": 9,
+        "name": "Tommy Pickles",
+        "position": "Adventurer",
+        "location": "California"
+    },
+    {
+        "id": 10,
+        "name": "Rocko",
+        "position": "Cashier",
+        "location": "O-Town, California"
+    },
+    {
+        "id": 11,
+        "name": "Captain Planet",
+        "phone": "1234432143",
+        "position": "Superhero",
+        "location": "Earth"
+    },
+    {
+        "id": 12,
+        "name": "Ickis",
+        "phone": "1234432143",
+        "position": "Ahhhh! A Real Monster!",
+        "location": "Under a City Dump"
+    }
+]
