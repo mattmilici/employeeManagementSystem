@@ -1,51 +1,51 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import Table from "../../components/Table/index"
 
 
-class SearchForm extends Component {
-    state = {
+
+function SearchForm() {
+
+    const InitalState = {
         search: "",
         results: []
     };
 
-    handleInputChange = event => {
+    const [state, setState] = useState(InitalState)
+
+    function handleInputChange(event) {
         const name = event.target.name;
         const value = event.target.value;
-        this.setState({
+        setState({
             [name]: value
         });
     };
 
-    handleFormSubmit = event => {
+    function handleFormSubmit(event) {
         event.preventDefault();
-        console.log(this.state.search);
-        this.setState({
+        console.log(state.search);
+        setState({
             search: ""
         });
     };
 
-    render() {
-        return (
-            <div>
-                <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-                        Search Bar</label>
-                    <input onChange="{props.handleInputChange}"
-                        value={this.state.search}
-                        onChange={this.handleInputChange}
-                        name="search"
-                        type="text"
-                        className="form-control w-1/2"
-                        placeholder="Search for an employee"
-                        id="search" />
-                    <button onClick={this.handleFormSubmit} className="" type="button">
-                        Clear Filter
-                          </button>
-                </form>
-                <Table search={this.state.search}></Table>
-            </div>
-        );
-    }
+    return (
+        <div className="">
+            <form class="text-center m-auto w-25">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">Search Bar</label>
+                <input onChange={handleInputChange}
+                    value={state.search}
+                    onChange={handleInputChange}
+                    name="search"
+                    type="text"
+                    className="form-control w-1/2"
+                    placeholder="Search for an employee"
+                    id="search" />
+                <button onClick={handleFormSubmit} className="mt-10 py-10" type="button">Clear Filter</button>
+            </form >
+            <Table search={state.search}></Table>
+        </div >
+    );
+
 }
 
 export default SearchForm;

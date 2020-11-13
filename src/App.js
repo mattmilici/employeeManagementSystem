@@ -1,12 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import Title from "./components/Title";
-import Table from "./components/Table/index"
 import SearchForm from "./components/SearchForm/SearchForm";
 
 function App() {
   return (
     <div>
-      <Title>Friends List</Title>
+      <Title>Employee Directory</Title>
       <SearchForm></SearchForm>
     </div>
   );

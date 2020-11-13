@@ -1,24 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
 import FriendCard from "../FriendCard/index";
+import TableHeader from "../TableHeader/TableHeader"
 import friends from "../../friends.json";
 
 
 function Table(props) {
-    console.log(props.search)
 
     function checkName(friends) {
-        return friends.name.includes(props.search)
+        return friends.name.includes(props.search);
     }
+
+    function running(value) {
+        console.log("test")
+        console.log(value)
+    }
+
     return (
-        <table class="table-auto m-auto">
+        <table className="table-auto m-auto justify-content-center">
             <thead>
-                <tr>
-                    <th className="px-4 py-2">Name</th>
-                    <th className="px-4 py-2">Position</th>
-                    <th className="px-4 py-2">Location</th>
-                    <th className="px-4 py-2">Phone</th>
-                </tr>
-            </thead>
+                <tr className="py-5">
+                    <TableHeader onClick={running} > Name</TableHeader >
+                    <TableHeader >Position</TableHeader>
+                    <TableHeader >Location</TableHeader>
+                    <TableHeader >Phone</TableHeader>
+                </tr >
+            </thead >
             <tbody>
                 {
                     friends.filter(checkName).map(friend => (
@@ -32,7 +38,7 @@ function Table(props) {
                         />
                     ))}
             </tbody>
-        </table>
+        </table >
     )
 }
 
