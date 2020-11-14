@@ -20,7 +20,7 @@ function Table(props) {
             sortType: event.target.innerHTML.toLowerCase()
         })
         friends.sort(function (a, b) {
-            var textA = a.name[event.target.innerHTML.toLowerCase()];
+            var textA = a[event.target.innerHTML.toLowerCase()];
             var textB = b[event.target.innerHTML.toLowerCase()];
             return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
         })
