@@ -30,8 +30,8 @@ function SearchForm() {
 
     return (
         <div className="">
-            <form class="text-center m-auto w-25">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">Search Bar</label>
+            <form className="text-center m-auto w-25">
+                <label className="block text-gray-700 text-sm font-bold mb-2" for="username">Search Bar</label>
                 <input onChange={handleInputChange}
                     value={state.search}
                     onChange={handleInputChange}
