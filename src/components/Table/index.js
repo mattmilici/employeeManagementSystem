@@ -6,7 +6,8 @@ import TableHeader from "../TableHeader/TableHeader"
 
 function Table(props) {
     const [state, setState] = useState({
-        sortType: ""
+        sortType: "",
+
     })
 
 
@@ -33,10 +34,6 @@ function Table(props) {
                     <TableHeader click={compare} name="Position"></TableHeader>
                     <TableHeader click={compare} name="Location"></TableHeader>
                     <TableHeader click={compare} name="Phone"></TableHeader>
-                    {/* <th onClick={compare} className="px-4 py-2 bg-dark text-white" value="name">Name</th> */}
-                    {/* <th onClick={compare} className="px-4 py-2 bg-dark text-white" value="position">Position</th>
-                    <th onClick={compare} className="px-4 py-2 bg-dark text-white" value="location">Location</th>
-                    <th onClick={compare} className="px-4 py-2 bg-dark text-white" value="phone">Phone</th> */}
                 </tr>
             </thead >
             <tbody>
