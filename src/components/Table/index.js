@@ -16,26 +16,15 @@ function Table(props) {
     }
 
     function compare(event) {
-        console.log(event)
-        console.log(event.target.innerHTML.toLowerCase())
-        console.log("WORKING")
         setState({
             sortType: event.target.innerHTML.toLowerCase()
         })
-
-        sort(state)
-    }
-
-    function sort(state) {
-        console.log(state.sortType)
         friends.sort(function (a, b) {
-            var textA = a[state.sortType];
-            var textB = b[state.sortType];
+            var textA = a.name[event.target.innerHTML.toLowerCase()];
+            var textB = b[event.target.innerHTML.toLowerCase()];
             return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
         })
-        console.log(friends)
     }
-
 
     return (
         <table className="table-auto m-auto justify-content-center">
